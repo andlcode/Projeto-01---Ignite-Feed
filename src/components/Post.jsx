@@ -1,3 +1,4 @@
+import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 export function Post(props) {
@@ -19,7 +20,7 @@ export function Post(props) {
 
 
 
-  <div className={styles.content}>
+  <div className={styles.commentList}>
         <p>Fala galeraa 👋</p>
         <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
         <p><a href="">jane.design/doctorcare</a></p>
@@ -30,13 +31,19 @@ export function Post(props) {
         </p>
       </div>
 
-      <div className={styles.commentForm}>
+      <form className={styles.commentForm}>
         <strong>Deixe seu Feedback</strong>
 
         <textarea name="" placeholder='Deixe um comentário' id="" cols="30" rows="10" />
           <footer>
-        <button type="submit">Comentar</button>
+        <button type="submit">Publicar</button>
         </footer>
+      </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </article>
   )
