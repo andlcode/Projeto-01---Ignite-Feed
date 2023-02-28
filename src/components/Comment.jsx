@@ -4,7 +4,7 @@ import styles from './Comment.module.css'
 export function Comment() {
   return(
     <div className={styles.comment}>
-      <img src="#" alt="" />
+      <img src="https://xesque.rocketseat.dev/users/avatar/profile-f62909c7-8786-4851-83c5-e91679e19ff1-1627195178177.jpg" alt="" />
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
@@ -21,10 +21,10 @@ export function Comment() {
         </div>
         <footer>
         <button>
-          <ThumbsUp >
+          <ThumbsUp />
             Aplaudir <span>20</span>
-          </ThumbsUp>
-        </button>
+            </button>
+       
         </footer>
       </div>
     </div>
