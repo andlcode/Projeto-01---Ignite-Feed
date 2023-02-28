@@ -9,3 +9,11 @@ align-items: flex-start;
 
 gap: 20px;
 }
+
+@media (max-width: 768px){
+  html {
+    font-size: 87.5%git ;
+  }
+  .wrapper {
+  grid-template-columns: 1fr;
+}}
