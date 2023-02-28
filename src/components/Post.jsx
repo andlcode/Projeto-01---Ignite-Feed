@@ -1,3 +1,4 @@
+import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
@@ -7,7 +8,7 @@ export function Post(props) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src="https://xesque.rocketseat.dev/users/avatar/profile-f62909c7-8786-4851-83c5-e91679e19ff1-1627195178177.jpg" alt="" />
+          <Avatar  src="https://xesque.rocketseat.dev/users/avatar/profile-f62909c7-8786-4851-83c5-e91679e19ff1-1627195178177.jpg" alt="" />
           <div className={styles.authorInfo}>
             <strong>André Luiz</strong>
             <span>Software Developer</span>
