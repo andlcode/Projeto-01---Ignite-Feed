@@ -8,7 +8,7 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: 'https://github.com/diego3g.png',
+      avatarUrl: 'https://xesque.rocketseat.dev/users/avatar/profile-f62909c7-8786-4851-83c5-e91679e19ff1-1627195178177.jpg',
       name: 'André Luiz',
       role: 'Software Developer'
     },
