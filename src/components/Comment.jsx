@@ -2,7 +2,7 @@ import { ThumbsUp, Trash } from 'phosphor-react'
 import { Avatar } from './Avatar'
 import styles from './Comment.module.css'
 
-export function Comment() {
+export function Comment({content}) {
   return(
     <div className={styles.comment}>
       <Avatar hasBorder={false} src="https://xesque.rocketseat.dev/users/avatar/profile-f62909c7-8786-4851-83c5-e91679e19ff1-1627195178177.jpg" alt="" />
@@ -18,7 +18,7 @@ export function Comment() {
             <button title="Deletar comentário"><Trash size={20} /></button>
           </header>
 
-          <p>Muito bom Devon, parabéns! </p>
+          <p>{content}</p>
         </div>
         <footer>
         <button>
